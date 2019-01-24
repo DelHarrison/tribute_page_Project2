@@ -1,11 +1,73 @@
 li{
   list-style: none;
   display: inline;
+
+
 }
 nav{
-  background-color: blue;
+  background-color: #01426a;
   width: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 body{
-  margin:0px;
+  margin: 0em;
+  width: 100%;
+  font-family: 'Open Sans:400', sans-serif;
+  background-color: #f6f5f3;
+  background-image: url("pattern_gwc.png");
+}
+img{
+  width:25%;
+  margin:auto;
+  display: block;
+  height:auto;
+}
+figure{
+    justify-content: center;
+    margin-bottom: 0em;
+}
+nav ul {
+  list-style: none;
+  padding: 1em;
+  margin: 0em;
+  color: #ece81a;
+  display:flex;
+  justify-content: space-between;
+}
+hr{
+  margin-inline-start: 3em;
+  margin-inline-end: 3em;
+  color: #01426a;
+}
+h1{
+  text-align: center;
+  color:#ece81a;
+}
+h2{
+  color:#6eceb2;
+}
+.flex-grid{
+  display:flex;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+.col{
+  flex:1;
+  border-radius: 1em;
+  border-color: #666;
+  background-color: #fff;
+  padding-left:1em;
+}
+.nav-bar{
+}
+.sel{
+
+}
+h{
+  font-family: 'Open Sans:600', sans-serif;
+}
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
 }
