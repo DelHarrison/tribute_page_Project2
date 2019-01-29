@@ -9,6 +9,9 @@ nav{
   width: 100%;
   font-family: 'Montserrat', sans-serif;
 }
+.logo-pic{
+  width:25%;
+}
 body{
   margin: 0em;
   width: 100%;
@@ -17,7 +20,7 @@ body{
   background-image: url("pattern_gwc.png");
 }
 img{
-  width:25%;
+  width:90%;
   margin:auto;
   display: block;
   height:auto;
@@ -41,32 +44,40 @@ hr{
 }
 h1{
   text-align: center;
-  color:#ece81a;
+  color:#01426a;
 }
 h2{
-  color:#6eceb2;
+  color:#ece81a;
+  text-align: center;
 }
 .flex-grid{
-  display:flex;
+  display:grid;
   padding-left: .5em;
   padding-right: .5em;
+  grid-template-columns: repeat(3, 1fr);
 }
 .col{
   flex:1;
   border-radius: 1em;
   border-color: #666;
-  background-color: #fff;
-  padding-left:1em;
+  background-color: #6eceb2;
+}
+.heading-text{
+  color:#01426a;
+  text-align: center;
+  background-color:#ece81a;
+  border-radius: 1em;
+  overflow: hidden;
 }
 .nav-bar{
 }
-.sel{
-
+.sec1, .sec2{
+  margin-right: .5em;
 }
 h{
   font-family: 'Open Sans:600', sans-serif;
 }
-@media (max-width: 400px) {
+@media (max-width: 640px) {
   .flex-grid {
     display: block;
   }
