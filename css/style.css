@@ -1,8 +1,6 @@
 li{
   list-style: none;
   display: inline;
-
-
 }
 nav{
   background-color: #01426a;
@@ -20,10 +18,16 @@ body{
   background-image: url("pattern_gwc.png");
 }
 img{
-  width:90%;
+  width: 50%;
   margin:auto;
   display: block;
   height:auto;
+}
+.sip_pic{
+  float:left;
+  margin: 1em;
+  border-radius: 2em;
+  width: 33%
 }
 figure{
     justify-content: center;
@@ -68,8 +72,40 @@ h2{
   background-color:#ece81a;
   border-radius: 1em;
   overflow: hidden;
+  margin-inline-start: .5em;
+  margin-inline-end: .5em;
 }
 .nav-bar{
+}
+.one{
+  grid-area: header;
+}
+.two{
+  grid-area: sidebar;
+}
+.three{
+  grid-area: main;
+}
+.four{
+  grid-area: aside;
+}
+
+.flexbox{
+  background: #6eceb2;
+  border-radius: 1em;
+
+}
+.flexbox-container{
+  padding-left: .25em;
+  padding-right: .25em;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 5fr 2.5fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-areas:
+  "header header header"
+  "sidebar main aside"
+  "sidebar footer footer";
 }
 .sec1, .sec2{
   margin-right: .5em;
@@ -78,7 +114,7 @@ h{
   font-family: 'Open Sans:600', sans-serif;
 }
 @media (max-width: 640px) {
-  .flex-grid {
+  .flexbox-container {
     display: block;
   }
 }
