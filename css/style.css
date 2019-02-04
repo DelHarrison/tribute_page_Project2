@@ -1,14 +1,16 @@
-li{
-  list-style: none;
-  display: inline;
-}
+
 nav{
   background-color: #01426a;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
 }
-.logo-pic{
-  width:25%;
+nav ul {
+  list-style: none;
+  padding: 1em;
+  margin: 0em;
+  color: #ece81a;
+  display:flex;
+  justify-content: space-between;
 }
 body{
   margin: 0em;
@@ -23,24 +25,6 @@ img{
   display: block;
   height:auto;
 }
-.sip_pic{
-  float:left;
-  margin: 1em;
-  border-radius: 2em;
-  width: 33%
-}
-figure{
-    justify-content: center;
-    margin-bottom: 0em;
-}
-nav ul {
-  list-style: none;
-  padding: 1em;
-  margin: 0em;
-  color: #ece81a;
-  display:flex;
-  justify-content: space-between;
-}
 hr{
   margin-inline-start: 3em;
   margin-inline-end: 3em;
@@ -53,6 +37,19 @@ h1{
 h2{
   color:#ece81a;
   text-align: center;
+}
+figure{
+    justify-content: center;
+    margin-bottom: 0em;
+}
+.logo-pic{
+  width:25%;
+}
+.sip_pic{
+  justify-items: start;
+  margin: 1em;
+  border-radius: 2em;
+  width: 33%;
 }
 .flex-grid{
   display:grid;
@@ -75,10 +72,9 @@ h2{
   margin-inline-start: .5em;
   margin-inline-end: .5em;
 }
-.nav-bar{
-}
 .one{
   grid-area: header;
+  display: grid;
 }
 .two{
   grid-area: sidebar;
@@ -89,7 +85,10 @@ h2{
 .four{
   grid-area: aside;
 }
-
+.sip-text{
+  justify-items:end;
+  display:grid;
+}
 .flexbox{
   background: #6eceb2;
   border-radius: 1em;
