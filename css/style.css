@@ -19,6 +19,11 @@ body{
   background-color: #f6f5f3;
   background-image: url("pattern_gwc.png");
 }
+svg{
+  display:block;
+  margin: auto;
+  padding-top: 20px;
+}
 img{
   width: 50%;
   margin:auto;
@@ -33,6 +38,8 @@ hr{
 h1{
   text-align: center;
   color:#01426a;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 h2{
   color:#ece81a;
@@ -46,10 +53,11 @@ figure{
   width:25%;
 }
 .sip_pic{
-  justify-items: start;
+  justify-content: flex-start;
   margin: 1em;
   border-radius: 2em;
   width: 33%;
+  display:grid;
 }
 .flex-grid{
   display:grid;
@@ -72,26 +80,37 @@ figure{
   margin-inline-start: .5em;
   margin-inline-end: .5em;
 }
+.icon-1{
+  margin-bottom: 15px;
+}
+
 .one{
-  grid-area: header;
+  grid-area: tile1;
   display: grid;
+  justify-content: center;
 }
 .two{
-  grid-area: sidebar;
+  grid-area: tile2;
 }
 .three{
-  grid-area: main;
+  grid-area: tile3;
 }
 .four{
   grid-area: aside;
 }
 .sip-text{
-  justify-items:end;
+  justify-content: end;
   display:grid;
+  color: 	#F6F5F3;
 }
 .flexbox{
   background: #6eceb2;
   border-radius: 1em;
+}
+i{
+  color:#f4364c;
+  justify-content:center;
+
 
 }
 .flexbox-container{
@@ -99,12 +118,11 @@ figure{
   padding-right: .25em;
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr 5fr 2.5fr;
-  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-template-rows: 1fr 2fr 1fr;
   grid-template-areas:
-  "header header header"
-  "sidebar main aside"
-  "sidebar footer footer";
+  "tile1 tile2 tile3"
+  "aside aside aside"
 }
 .sec1, .sec2{
   margin-right: .5em;
@@ -112,6 +130,7 @@ figure{
 h{
   font-family: 'Open Sans:600', sans-serif;
 }
+
 @media (max-width: 640px) {
   .flexbox-container {
     display: block;
