@@ -43,11 +43,20 @@ h1{
 }
 h2{
   color:#ece81a;
-  text-align: center;
+
 }
+
 figure{
     justify-content: center;
     margin-bottom: 0em;
+}
+.space-area{
+  margin-bottom: 0em;
+}
+.sub-head{
+  text-align: center;
+  color:#ece81a;
+  margin-bottom: 1em;
 }
 .logo-pic{
   width:25%;
@@ -134,5 +143,14 @@ h{
 @media (max-width: 640px) {
   .flexbox-container {
     display: block;
+
   }
+  .flexbox{
+    margin-top:15px;
+  }
+  .sub-head{
+    padding-bottom: .5em;
+  }
+}
+
 }
