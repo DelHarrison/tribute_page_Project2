@@ -38,6 +38,7 @@ hr{
 h1{
   text-align: center;
   color:#01426a;
+
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -45,10 +46,18 @@ h2{
   color:#ece81a;
 
 }
-
 figure{
     justify-content: center;
     margin-bottom: 0em;
+}
+.body-header{
+  color:#F4364C;
+}
+.body-area{
+  text-align: center;
+}
+.body-text{
+  color:#01426a;
 }
 .space-area{
   margin-bottom: 0em;
@@ -106,6 +115,7 @@ figure{
 }
 .four{
   grid-area: aside;
+
 }
 .sip-text{
   justify-content: end;
@@ -151,6 +161,8 @@ h{
   .sub-head{
     padding-bottom: .5em;
   }
-}
-
+  .four{
+    padding-top: .5em;
+    padding-bottom:.5em;
+  }
 }
